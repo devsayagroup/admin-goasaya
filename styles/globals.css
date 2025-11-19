@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-text: var(--font-text);
+  --font-style: var(--font-style);
+  --color-maroon: #461B13;
+  --color-orange: #D44F27;
+  --color-orangecream: #E47406;
+  --color-cream: #EEEDE5;
+  --color-white: #f1f1f1;
+  --color-black: #131313;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-cream);
+}
