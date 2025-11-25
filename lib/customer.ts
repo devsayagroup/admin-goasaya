@@ -1,58 +1,288 @@
 import { Customer } from "@/types/customer";
 
 export const dummyCustomers: Customer[] = [
-  { id: "C001", firstName: "Andi", lastName: "Saputra", email: "andi.saputra@example.com", phone: "+628129001111" },
-  { id: "C002", firstName: "Budi", lastName: "Wijaya", email: "budi.wijaya@example.com", phone: "+628129001112" },
-  { id: "C003", firstName: "Citra", lastName: "Lestari", email: "citra.lestari@example.com", phone: "+628129001113" },
-  { id: "C004", firstName: "Dewi", lastName: "Putri", email: "dewi.putri@example.com", phone: "+628129001114" },
-  { id: "C005", firstName: "Eka", lastName: "Mahendra", email: "eka.mahendra@example.com", phone: "+628129001115" },
-  { id: "C006", firstName: "Fajar", lastName: "Pratama", email: "fajar.pratama@example.com", phone: "+628129001116" },
-  { id: "C007", firstName: "Gita", lastName: "Anggraini", email: "gita.anggraini@example.com", phone: "+628129001117" },
-  { id: "C008", firstName: "Hadi", lastName: "Kusuma", email: "hadi.kusuma@example.com", phone: "+628129001118" },
-  { id: "C009", firstName: "Indra", lastName: "Gunawan", email: "indra.gunawan@example.com", phone: "+628129001119" },
-  { id: "C010", firstName: "Joko", lastName: "Santoso", email: "joko.santoso@example.com", phone: "+628129001120" },
+  {
+    "customer_id": "C001",
+    "name": "Ayu Hartati",
+    "phone": "0812-3456-7812",
+    "email": "ayu.hartati@example.com",
+    "company": "GoDigital Asia"
+  },
+  {
+    "customer_id": "C002",
+    "name": "Budi Santoso",
+    "phone": "0813-5567-9981",
+    "email": "budi.santoso@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C003",
+    "name": "Clara Wijaya",
+    "phone": "0812-7799-6612",
+    "email": "clara.wijaya@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C004",
+    "name": "Dewi Lestari",
+    "phone": "0821-3344-1122",
+    "email": "dewi.lestari@example.com",
+    "company": "Indo Creative Labs"
+  },
+  {
+    "customer_id": "C005",
+    "name": "Eko Pramono",
+    "phone": "0819-7788-2231",
+    "email": "eko.pramono@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C006",
+    "name": "Farah Azzahra",
+    "phone": "0812-9911-5522",
+    "email": "farah.azzahra@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C007",
+    "name": "Gilang Saputra",
+    "phone": "0813-2244-6688",
+    "email": "gilang.saputra@example.com",
+    "company": "BlueWave Production"
+  },
+  {
+    "customer_id": "C008",
+    "name": "Hana Putri",
+    "phone": "0822-1133-4455",
+    "email": "hana.putri@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C009",
+    "name": "Indra Kusuma",
+    "phone": "0812-5566-9870",
+    "email": "indra.kusuma@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C010",
+    "name": "Jessica Halim",
+    "phone": "0813-9900-5123",
+    "email": "jessica.halim@example.com",
+    "company": ""
+  },
 
-  { id: "C011", firstName: "Kirana", lastName: "Pertiwi", email: "kirana.pertiwi@example.com", phone: "+628129001121" },
-  { id: "C012", firstName: "Lala", lastName: "Manurung", email: "lala.manurung@example.com", phone: "+628129001122" },
-  { id: "C013", firstName: "Miko", lastName: "Salim", email: "miko.salim@example.com", phone: "+628129001123" },
-  { id: "C014", firstName: "Nadia", lastName: "Siregar", email: "nadia.siregar@example.com", phone: "+628129001124" },
-  { id: "C015", firstName: "Oscar", lastName: "Tanjung", email: "oscar.tanjung@example.com", phone: "+628129001125" },
-  { id: "C016", firstName: "Putri", lastName: "Yuliana", email: "putri.yuliana@example.com", phone: "+628129001126" },
-  { id: "C017", firstName: "Rama", lastName: "Herlambang", email: "rama.herlambang@example.com", phone: "+628129001127" },
-  { id: "C018", firstName: "Sinta", lastName: "Kartika", email: "sinta.kartika@example.com", phone: "+628129001128" },
-  { id: "C019", firstName: "Tono", lastName: "Aditya", email: "tono.aditya@example.com", phone: "+628129001129" },
-  { id: "C020", firstName: "Umar", lastName: "Firdaus", email: "umar.firdaus@example.com", phone: "+628129001130" },
+  {
+    "customer_id": "C011",
+    "name": "Kirana Dewanti",
+    "phone": "0812-5588-1244",
+    "email": "kirana.dewanti@example.com",
+    "company": "Nusantara Foods"
+  },
+  {
+    "customer_id": "C012",
+    "name": "Lukas Fernando",
+    "phone": "0896-7711-3488",
+    "email": "lukas.fernando@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C013",
+    "name": "Maria Fransisca",
+    "phone": "0813-9901-2299",
+    "email": "maria.fransisca@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C014",
+    "name": "Nathan Adiwijaya",
+    "phone": "0812-1133-2299",
+    "email": "nathan.adiwijaya@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C015",
+    "name": "Olivia Nathania",
+    "phone": "0821-5566-2201",
+    "email": "olivia.nathania@example.com",
+    "company": "Prime Logistics"
+  },
+  {
+    "customer_id": "C016",
+    "name": "Prasetyo Hadi",
+    "phone": "0813-6677-1120",
+    "email": "prasetyo.hadi@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C017",
+    "name": "Queen Prameswari",
+    "phone": "0819-4455-0098",
+    "email": "queen.prameswari@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C018",
+    "name": "Rendy Mahardika",
+    "phone": "0812-8821-5677",
+    "email": "rendy.mahardika@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C019",
+    "name": "Salsa Marlina",
+    "phone": "0823-5500-8811",
+    "email": "salsa.marlina@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C020",
+    "name": "Theo Pranata",
+    "phone": "0813-7123-5567",
+    "email": "theo.pranata@example.com",
+    "company": ""
+  },
 
-  { id: "C021", firstName: "Vina", lastName: "Melati", email: "vina.melati@example.com", phone: "+628129001131" },
-  { id: "C022", firstName: "Wawan", lastName: "Ridwan", email: "wawan.ridwan@example.com", phone: "+628129001132" },
-  { id: "C023", firstName: "Xena", lastName: "Anggara", email: "xena.anggara@example.com", phone: "+628129001133" },
-  { id: "C024", firstName: "Yusuf", lastName: "Sapriadi", email: "yusuf.sapriadi@example.com", phone: "+628129001134" },
-  { id: "C025", firstName: "Zahra", lastName: "Aulia", email: "zahra.aulia@example.com", phone: "+628129001135" },
-  { id: "C026", firstName: "Rizky", lastName: "Kurniawan", email: "rizky.kurniawan@example.com", phone: "+628129001136" },
-  { id: "C027", firstName: "Aulia", lastName: "Pramesti", email: "aulia.pramesti@example.com", phone: "+628129001137" },
-  { id: "C028", firstName: "Farhan", lastName: "Syaputra", email: "farhan.syaputra@example.com", phone: "+628129001138" },
-  { id: "C029", firstName: "Chelsea", lastName: "Amelia", email: "chelsea.amelia@example.com", phone: "+628129001139" },
-  { id: "C030", firstName: "Dion", lastName: "Wijoyo", email: "dion.wijoyo@example.com", phone: "+628129001140" },
+  {
+    "customer_id": "C021",
+    "name": "Ulfa Nadia",
+    "phone": "0812-8001-2233",
+    "email": "ulfa.nadia@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C022",
+    "name": "Vino Permadi",
+    "phone": "0813-9901-4411",
+    "email": "vino.permadi@example.com",
+    "company": "Skyline Architects"
+  },
+  {
+    "customer_id": "C023",
+    "name": "Winda Natalia",
+    "phone": "0812-2233-1766",
+    "email": "winda.natalia@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C024",
+    "name": "Xaverius Bintang",
+    "phone": "0821-1778-9900",
+    "email": "xaverius.bintang@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C025",
+    "name": "Yohana Grace",
+    "phone": "0813-5522-7891",
+    "email": "yohana.grace@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C026",
+    "name": "Zidan Maulana",
+    "phone": "0812-1134-9081",
+    "email": "zidan.maulana@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C027",
+    "name": "Aditya Ramadhan",
+    "phone": "0896-5522-1100",
+    "email": "aditya.ramadhan@example.com",
+    "company": "UrbanTech Media"
+  },
+  {
+    "customer_id": "C028",
+    "name": "Bella Chandra",
+    "phone": "0813-6621-9811",
+    "email": "bella.chandra@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C029",
+    "name": "Cindy Meylan",
+    "phone": "0822-1199-8876",
+    "email": "cindy.meylan@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C030",
+    "name": "Daniel Kuswara",
+    "phone": "0812-8831-6678",
+    "email": "daniel.kuswara@example.com",
+    "company": ""
+  },
 
-  { id: "C031", firstName: "Elisa", lastName: "Fauziah", email: "elisa.fauziah@example.com", phone: "+628129001141" },
-  { id: "C032", firstName: "Fikri", lastName: "Zulfikar", email: "fikri.zulfikar@example.com", phone: "+628129001142" },
-  { id: "C033", firstName: "Ganesha", lastName: "Irfan", email: "ganesha.irfan@example.com", phone: "+628129001143" },
-  { id: "C034", firstName: "Helmi", lastName: "Suryana", email: "helmi.suryana@example.com", phone: "+628129001144" },
-  { id: "C035", firstName: "Intan", lastName: "Puspita", email: "intan.puspita@example.com", phone: "+628129001145" },
-  { id: "C036", firstName: "Jordan", lastName: "Hutabarat", email: "jordan.hutabarat@example.com", phone: "+628129001146" },
-  { id: "C037", firstName: "Kevin", lastName: "Saputro", email: "kevin.saputro@example.com", phone: "+628129001147" },
-  { id: "C038", firstName: "Livia", lastName: "Nabila", email: "livia.nabila@example.com", phone: "+628129001148" },
-  { id: "C039", firstName: "Mahesa", lastName: "Nugroho", email: "mahesa.nugroho@example.com", phone: "+628129001149" },
-  { id: "C040", firstName: "Nadya", lastName: "Utami", email: "nadya.utami@example.com", phone: "+628129001150" },
+  {
+    "customer_id": "C031",
+    "name": "Evelyn Andjani",
+    "phone": "0819-2211-0045",
+    "email": "evelyn.andjani@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C032",
+    "name": "Fajar Nugroho",
+    "phone": "0813-9912-7772",
+    "email": "fajar.nugroho@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C033",
+    "name": "Gita Paramita",
+    "phone": "0821-7723-5501",
+    "email": "gita.paramita@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C034",
+    "name": "Hendrik Liwang",
+    "phone": "0812-6655-9071",
+    "email": "hendrik.liwang@example.com",
+    "company": "Everstone Holdings"
+  },
+  {
+    "customer_id": "C035",
+    "name": "Intan Rahmawati",
+    "phone": "0813-4490-1107",
+    "email": "intan.rahmawati@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C036",
+    "name": "Jordy Halim",
+    "phone": "0823-8812-5510",
+    "email": "jordy.halim@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C037",
+    "name": "Kenny Surya",
+    "phone": "0812-0098-4412",
+    "email": "kenny.surya@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C038",
+    "name": "Linda Kurniawan",
+    "phone": "0813-9911-2210",
+    "email": "linda.kurniawan@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C039",
+    "name": "Michael Adrian",
+    "phone": "0821-6682-1109",
+    "email": "michael.adrian@example.com",
+    "company": ""
+  },
+  {
+    "customer_id": "C040",
+    "name": "Nadia Permata",
+    "phone": "0812-7721-5512",
+    "email": "nadia.permata@example.com",
+    "company": ""
+  }
+]
 
-  { id: "C041", firstName: "Olga", lastName: "Simanjuntak", email: "olga.simanjuntak@example.com", phone: "+628129001151" },
-  { id: "C042", firstName: "Prasetyo", lastName: "Anggara", email: "prasetyo.anggara@example.com", phone: "+628129001152" },
-  { id: "C043", firstName: "Qory", lastName: "Anindya", email: "qory.anindya@example.com", phone: "+628129001153" },
-  { id: "C044", firstName: "Rendra", lastName: "Ardiansyah", email: "rendra.ardiansyah@example.com", phone: "+628129001154" },
-  { id: "C045", firstName: "Selena", lastName: "Rahmi", email: "selena.rahmi@example.com", phone: "+628129001155" },
-  { id: "C046", firstName: "Tirta", lastName: "Baskoro", email: "tirta.baskoro@example.com", phone: "+628129001156" },
-  { id: "C047", firstName: "Ulfa", lastName: "Wulandari", email: "ulfa.wulandari@example.com", phone: "+628129001157" },
-  { id: "C048", firstName: "Vito", lastName: "Satriyo", email: "vito.satriyo@example.com", phone: "+628129001158" },
-  { id: "C049", firstName: "Wina", lastName: "Mardiana", email: "wina.mardiana@example.com", phone: "+628129001159" },
-  { id: "C050", firstName: "Zidan", lastName: "Fadhil", email: "zidan.fadhil@example.com", phone: "+628129001160" },
-];

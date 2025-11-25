@@ -55,6 +55,7 @@
 import { useState } from "react";
 import { Reservation } from "@/types/reservation";
 import StatusBadge from "@/components/ui/StatusBadge";
+import { RoomName } from "@/components/ui/RoomName";
 import { Delete } from "lucide-react";
 
 interface Props {
@@ -104,7 +105,7 @@ export default function ReservationTable({ data, onDelete }: Props) {
                 {r.startTime} - {r.endTime}
               </td>
               <td className="p-3 border text-center">{r.pax}</td>
-              <td className="p-3 border text-center">{r.area}</td>
+              <td className="p-3 border text-center"><RoomName roomKey={r.area} /></td>
               <td className="p-3 border text-center">
                 {r.specialEvent || "-"}
               </td>
