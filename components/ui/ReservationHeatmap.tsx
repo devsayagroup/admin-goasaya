@@ -296,21 +296,21 @@ export default function ReservationHeatmap({
       <div className="flex items-center justify-between mb-4">
         <button
           onClick={() => changeDay(-1)}
-          className="px-3 py-1 rounded-md bg-gray-200 hover:bg-gray-300"
+          className="flex flex-col md:flex-row gap-2 px-3 py-1 rounded-md bg-gray-200 hover:bg-gray-300"
         >
-          ← Previous Day
+          ←<span className="hidden md:flex">Previous Day</span>
         </button>
 
-        <h2 className="font-bold text-lg">
+        <h2 className="flex flex-col md:flex-row justify-center items-center font-bold text-lg">
           Reservations for:{" "}
           <span className="text-orange-600">{selectedDate}</span>
         </h2>
 
         <button
           onClick={() => changeDay(1)}
-          className="px-3 py-1 rounded-md bg-gray-200 hover:bg-gray-300"
+          className="flex flex-col md:flex-row gap-2 px-3 py-1 rounded-md bg-gray-200 hover:bg-gray-300"
         >
-          Next Day →
+          <span className="hidden md:flex">Next Day</span> →
         </button>
       </div>
 
@@ -338,7 +338,7 @@ export default function ReservationHeatmap({
               disabled={count === 0}
               onClick={() => count > 0 && onSelect(matched)} // return array now
               className={`
-                flex flex-col items-center justify-center w-16 h-16 
+                flex flex-col items-center justify-center p-2 md:p-0 w-16 h-16 
                 rounded-md text-xs font-semibold transition 
                 ${color}
                 ${

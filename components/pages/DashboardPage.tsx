@@ -273,7 +273,7 @@ export default function DashboardPage() {
       </div>
 
       <div className="grid grid-cols-1 gap-6">
-        <div className="col-span-3 bg-white p-6 rounded-md shadow border border-neutral-500">
+        <div className="col-span-3 bg-white p-4 md:p-6 rounded-md shadow border border-neutral-500">
           {/* <ReservationChartToday 
             reservations={reservations} 
             onSelect={(res: any) => setSelectedReservation(res)}

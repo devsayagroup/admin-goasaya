@@ -131,12 +131,22 @@ export default function ReservationPage() {
 
   // FILTERING
   const filtered = reservations.filter((r) => {
+    const searchLower = search.toLowerCase();
+
+    const matchesSearch =
+      searchLower === "" ||
+      r.customerName.toLowerCase().includes(searchLower) ||
+      r.specialEvent.toLowerCase().includes(searchLower) ||
+      r.date.toLowerCase().includes(searchLower) ||
+      r.area.toLowerCase().includes(searchLower);
+
     return (
-      r.customerName.toLowerCase().includes(search.toLowerCase()) &&
+      matchesSearch &&
       (date ? r.date === date : true) &&
       (area ? r.area === area : true)
     );
   });
+
 
   // DELETE
   const deleteReservation = (id: string) => {
@@ -153,7 +163,7 @@ export default function ReservationPage() {
   const handleAddReservation = (data: any) => {
     const newReservation: Reservation = {
       id: generateId(),
-      customerId: "manual-input", // (or generate random)
+      customerId: "manual-input",
       ...data,
     };
 

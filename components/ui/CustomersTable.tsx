@@ -87,12 +87,20 @@ export default function CustomerTable({ customers }: { customers: Customer[] }) 
                 {c.company ? c.company : <span className="text-gray-400">-</span>}
               </td>
               <td className="px-4 py-2">
-                <button
-                  className="px-3 py-1 bg-blue-600 text-white rounded text-xs hover:bg-blue-700"
-                  onClick={() => console.log("View customer:", c.customer_id)}
-                >
-                  View
-                </button>
+                <div className="flex gap-2">
+                  <button
+                    className="px-3 py-1 bg-blue-600 text-white rounded text-xs hover:bg-blue-700"
+                    onClick={() => console.log("View customer:", c.customer_id)}
+                  >
+                    View
+                  </button>
+                  <button
+                    className="px-3 py-1 bg-lime-600 text-white rounded text-xs hover:bg-blue-700"
+                    onClick={() => console.log("View customer:", c.customer_id)}
+                  >
+                    Chat
+                  </button>
+                </div>
               </td>
             </tr>
           ))}

@@ -8,7 +8,7 @@ const navItems = [
   { name: "Reservations", href: "/admin/reservations" },
   { name: "Events", href: "/admin/events" },
   { name: "Customers", href: "/admin/customers" },
-  { name: "Settings", href: "/admin/settings" },
+  // { name: "Settings", href: "/admin/settings" },
 ];
 
 export default function Sidebar({
