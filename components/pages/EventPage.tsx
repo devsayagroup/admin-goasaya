@@ -66,7 +66,7 @@ export default function EventTable() {
 
 
   return (
-    <div className="bg-white p-6">
+    <div className="p-6">
       <h1 className="text-2xl text-black font-bold mb-8">Special Events</h1>
 
       <ReservationFilters
