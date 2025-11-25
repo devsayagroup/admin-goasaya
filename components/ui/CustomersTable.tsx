@@ -89,7 +89,7 @@ export default function CustomerTable({ customers }: { customers: Customer[] }) 
               <td className="px-4 py-2">
                 <div className="flex gap-2">
                   <button
-                    className="px-3 py-1 bg-blue-600 text-white rounded text-xs hover:bg-blue-700"
+                    className="px-3 py-1 bg-orange text-white rounded text-xs hover:bg-blue-700"
                     onClick={() => console.log("View customer:", c.customer_id)}
                   >
                     View
