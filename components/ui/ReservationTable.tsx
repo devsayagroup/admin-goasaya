@@ -1,62 +1,10 @@
-// "use client";
-
-// import { Reservation } from "@/types/reservation";
-
-// interface Props {
-//   data: Reservation[];
-//   onDelete: (id: string) => void;
-// }
-
-// export default function ReservationTable({ data, onDelete }: Props) {
-//   return (
-//     <table className="w-full rounded-md border-collapse border text-black">
-//       <thead>
-//         <tr className="border border-black bg-neutral-300 text-black">
-//           <th className="p-3 border">Name</th>
-//           <th className="p-3 border">Date</th>
-//           <th className="p-3 border">Time</th>
-//           <th className="p-3 border">Pax</th>
-//           <th className="p-3 border">Area</th>
-//           <th className="p-3 border">Special Event</th>
-//           <th className="p-3 border">Action</th>
-//         </tr>
-//       </thead>
-
-//       <tbody>
-//         {data.map((r) => (
-//           <tr key={r.id} className="border ">
-//             <td className="p-3 border">{r.name}</td>
-//             <td className="p-3 border text-center">{r.date}</td>
-//             <td className="p-3 border text-center">
-//               {r.startTime} - {r.endTime}
-//             </td>
-//             <td className="p-3 border text-center">{r.pax}</td>
-//             <td className="p-3 border text-center">{r.area}</td>
-//             <td className="p-3 border text-center">
-//               {r.specialEvent || "-"}
-//             </td>
-//             <td className="p-3 border text-center">
-//               <button
-//                 onClick={() => onDelete(r.id)}
-//                 className="text-red-500 hover:underline"
-//               >
-//                 Delete
-//               </button>
-//             </td>
-//           </tr>
-//         ))}
-//       </tbody>
-//     </table>
-//   );
-// }
-
 "use client";
 
 import { useState } from "react";
 import { Reservation } from "@/types/reservation";
 import StatusBadge from "@/components/ui/StatusBadge";
 import { RoomName } from "@/components/ui/RoomName";
-import { Delete } from "lucide-react";
+import { BiLogoWhatsapp, BiDetail } from "react-icons/bi";
 
 interface Props {
   data: Reservation[];
@@ -81,7 +29,6 @@ export default function ReservationTable({ data, onDelete }: Props) {
 
   return (
     <div className="space-y-4">
-      {/* TABLE */}
       <table className="w-full rounded-md border-collapse border text-black">
         <thead>
           <tr className="border border-black bg-neutral-300 text-black">
@@ -111,19 +58,26 @@ export default function ReservationTable({ data, onDelete }: Props) {
               </td>
               <td className="p-3 border text-center"><StatusBadge status={r.status}/></td>
               <td className="p-3 border text-center">
-                <button
-                  onClick={() => onDelete(r.id)}
-                  className="cursor-pointer text-red-500 hover:underline"
-                >
-                  <Delete/>
-                </button>
+                <div className="flex justify-center items-center text-center gap-2">
+                  <button
+                    onClick={() => onDelete(r.id)}
+                    className="cursor-pointer text-orange/80 hover:underline"
+                  >
+                    <BiDetail size={24} />
+                  </button>
+                  <button
+                    onClick={() => onDelete(r.id)}
+                    className="cursor-pointer text-lime-600 hover:underline"
+                  >
+                    <BiLogoWhatsapp size={24} />
+                  </button>
+                </div>
               </td>
             </tr>
           ))}
         </tbody>
       </table>
 
-      {/* PAGINATION CONTROLS */}
       <div className="flex items-center text-black justify-between mt-4">
         <button
           onClick={handlePrev}
